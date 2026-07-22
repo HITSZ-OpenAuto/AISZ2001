@@ -1,97 +1,105 @@
 # 课程名称
-course_name = "课程中文名称"
+course_name = "机器学习"
 
 # 仓库类型: normal | multi-project
 repo_type = "normal"
 
 # 课程代码 (用于检索)
-course_code = "CODE1234"
+course_code = "AISZ2001"
 
 # 课程简介
 description = """
-在这里填写课程的简要介绍。
-可以换行。
+机器学习（Machine Learning），3 学分，总学时 48。开课单位：计算机科学与技术学院。面向人工智能班大二秋季学期必修课。
 """
 
 # ===== 章节列表 =====
 [[sections]]
+title = "基本信息"
+
+[[sections.items]]
+content = """
+【学分】：3
+【学时构成】：总学时 48
+【成绩构成（24 级）】：课堂表现 15% | 实验 40% | 期末考试 45%
+【课程性质】：人工智能班大二秋季学期必修。
+"""
+author = { name = "aqua", link = "https://github.com/marine-aqua", date = "2026-07" }
+
+[[sections]]
 title = "考核方式"
 
-# 第一条内容
 [[sections.items]]
 content = """
-• 平时成绩: 30%
-• 期中考试: 30%
-• 期末考试: 40%
-"""
-# author 是可选的
-author = { name = "昵称A", date = "2025-03" }
+24 级考核方式如下：
 
-# 第二条内容（同一章节下多条）
+- 课堂表现（15%）：点名与课堂参与
+- 实验（40%）：在指定比赛平台上进行打榜，根据榜单排名与实验报告综合评定。实验可单人完成，也可 2 人组队完成。实验赛题包括：
+  - 中文新闻文本标题分类（文本分类）
+  - 产品评论观点提取（命名实体识别 + 情感分类）
+  - 细粒度中文仇恨言论识别（四元组抽取）
+  - 中文古诗词赏析评测（诗词情感推理与内容理解 QA）
+- 期末考试（45%）：闭卷。题型包括名词解释与简答题，覆盖从回归学习到大语言模型共 11 个章节的内容
+"""
+author = { name = "aqua", link = "https://github.com/marine-aqua", date = "2026-07" }
+
+[[sections]]
+title = "教材与参考书"
+
 [[sections.items]]
 content = """
-• 2024年: 期末 60% + 平时 40%
+教材：周志华《机器学习》（西瓜书）。
+
+课件因版权原因不上传本仓库。
 """
-author = { name = "昵称B", date = "2024-01" }
+author = { name = "aqua", link = "https://github.com/marine-aqua", date = "2026-07" }
 
 [[sections]]
 title = "学习资料"
 
 [[sections.items]]
 content = """
-• 教材: 《书名》
-• 参考资料链接
-"""
+本仓库提供以下资料：
+- 机器学习复习笔记（`notes/`）：按章节整理的复习笔记，适合考前快速浏览
+- 期末回忆版（`exams/`）：25 秋期末考试回忆，含部分名词解释与简答题
 
-# ===== 教师评价 (新 schema) =====
-# 顺序: lecturers.intro → lecturers.items → lecturers.summary
+课件因版权原因不上传本仓库。
+"""
+author = { name = "aqua", link = "https://github.com/marine-aqua", date = "2026-07" }
+
+[[sections]]
+title = "课程内容"
+
+[[sections.items]]
+content = """
+课程共 11 章，内容覆盖机器学习核心领域：
+
+1. 回归学习：线性回归、正则化、梯度下降、过拟合与欠拟合
+2. 线性分类器：线性可分、多分类策略（OvR/OvO）、特征工程
+3. 支持向量机：核函数、软硬间隔、特征空间
+4. 聚类算法：K-means、半监督学习
+5. 典型神经网络：CNN、RNN、激活函数、梯度消失/爆炸、自编码器、LSTM/GRU
+6. 自监督学习
+7. 自注意力机制与 Transformer：QKV、BERT、GPT
+8. 迁移学习：领域自适应、领域泛化、Fine-tuning、零样本/小样本学习
+9. 强化学习：Q 学习、价值函数、策略方法、智能体-环境交互
+10. 扩散学习：扩散模型、前向加噪与反向去噪、GAN
+11. 大语言模型：语境学习范式
+"""
+author = { name = "aqua", link = "https://github.com/marine-aqua", date = "2026-07" }
+
+[[sections]]
+title = "课程建议"
+
+[[sections.items]]
+content = """
+- 期末考试占 45%，且为闭卷，需认真准备
+- 考试以名词解释和简答为主，建议按章节系统性整理知识点
+- 实验在比赛平台上进行打榜，建议在实验报告中写清楚思路与尝试过程，不单纯看榜单排名
+"""
+author = { name = "aqua", link = "https://github.com/marine-aqua", date = "2026-07" }
+
+# ===== 教师信息 =====
 [lecturers]
 
-# 教师简介 (在教师列表之前，可以多条)
-[[lecturers.intro]]
-content = """
-教师团队总体介绍。
-人数: 3人
-"""
-author = { name = "管理员", date = "2025-01" }
-
-[[lecturers.intro]]
-content = """
-研究方向: 机器学习、计算机视觉
-"""
-author = { name = "管理员", date = "2025-01" }
-
-# 教师列表
 [[lecturers.items]]
-name = "教师A"
-
-[[lecturers.items.reviews]]
-content = """
-教师评价内容。
-可以多行。
-"""
-author = { name = "昵称", link = "https://github.com/xxx", date = "2025-03" }
-
-[[lecturers.items.reviews]]
-content = "另一条评价"
-author = { name = "匿名", date = "2025-01" }
-
-[[lecturers.items]]
-name = "教师B"
-
-[[lecturers.items.reviews]]
-content = "教师B的评价"
-author = { name = "学生", date = "2024-12" }
-
-# 教师总结 (在教师列表之后，可以多条)
-[[lecturers.summary]]
-content = """
-教师团队总结。
-整体教学水平较高。
-"""
-author = { name = "管理员", date = "2025-01" }
-
-[[lecturers.summary]]
-content = """
-建议: 尽早选课，晚了好老师就没了
-"""
+name = "陈科海"
