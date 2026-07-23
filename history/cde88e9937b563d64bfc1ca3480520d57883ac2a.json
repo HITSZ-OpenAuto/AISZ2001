@@ -1,0 +1,47 @@
+{
+  ".github/workflows/trigger-workflow.yml": {
+    "size": 516,
+    "time": 1784384913,
+    "hash": "927160c74ef5071c3b72480954fd03ef7cd832cf"
+  },
+  "LICENSE": {
+    "size": 20844,
+    "time": 1784384913,
+    "hash": "927160c74ef5071c3b72480954fd03ef7cd832cf"
+  },
+  "README.md": {
+    "size": 3435,
+    "time": 1784774452,
+    "hash": "cde88e9937b563d64bfc1ca3480520d57883ac2a"
+  },
+  "assignments/.gitkeep": {
+    "size": 0,
+    "time": 1784384913,
+    "hash": "927160c74ef5071c3b72480954fd03ef7cd832cf"
+  },
+  "exams/2025秋_期末回忆版.txt": {
+    "size": 545,
+    "time": 1784774452,
+    "hash": "cde88e9937b563d64bfc1ca3480520d57883ac2a"
+  },
+  "labs/.gitkeep": {
+    "size": 0,
+    "time": 1784384913,
+    "hash": "927160c74ef5071c3b72480954fd03ef7cd832cf"
+  },
+  "notes/2025_aqua_机器学习笔记.txt": {
+    "size": 37859,
+    "time": 1784774452,
+    "hash": "cde88e9937b563d64bfc1ca3480520d57883ac2a"
+  },
+  "readme.toml": {
+    "size": 3698,
+    "time": 1784774452,
+    "hash": "cde88e9937b563d64bfc1ca3480520d57883ac2a"
+  },
+  "slides/.gitkeep": {
+    "size": 0,
+    "time": 1784384913,
+    "hash": "927160c74ef5071c3b72480954fd03ef7cd832cf"
+  }
+}
