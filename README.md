@@ -1,73 +1,88 @@
-# CODE1234 - 课程中文名称
+# AISZ2001 - 机器学习
 <!-- TOML-META: repo_type="normal" -->
+<!-- TOML-BADGES: source="basic_info" -->
 
-在这里填写课程的简要介绍。
-可以换行。
+![学分](https://img.shields.io/badge/学分-3-moccasin)
+
+![学时构成](https://img.shields.io/badge/学时构成-gold)
+![总学时48](https://img.shields.io/badge/总学时-48-wheat)
+
+机器学习（Machine Learning），3 学分，总学时 48。开课单位：计算机科学与技术学院。面向人工智能班大二秋季学期必修课。
 
 ## 授课教师
 
-<!-- TOML-LECTURERS: part="intro" -->
-
-<!-- TOML-ITEM: id="lecturers-intro-1" -->
-
-教师团队总体介绍。
-人数: 3人
-
-> 文 / 管理员，2025-01
-
-<!-- TOML-ITEM: id="lecturers-intro-2" -->
-
-研究方向: 机器学习、计算机视觉
-
-> 文 / 管理员，2025-01
-
 <!-- TOML-LECTURERS: part="items" -->
-- 教师A
-  <!-- TOML-ITEM: id="review-教师A-1" -->
-  - 教师评价内容。
-  - 可以多行。
-    > 文 / [昵称](https://github.com/xxx)，2025-03
-  <!-- TOML-ITEM: id="review-教师A-2" -->
-  - 另一条评价
-    > 文 / 匿名，2025-01
-- 教师B
-  <!-- TOML-ITEM: id="review-教师B-1" -->
-  - 教师B的评价
-    > 文 / 学生，2024-12
-<!-- TOML-LECTURERS: part="summary" -->
-
-<!-- TOML-ITEM: id="lecturers-summary-1" -->
-
-教师团队总结。
-整体教学水平较高。
-
-> 文 / 管理员，2025-01
-
-<!-- TOML-ITEM: id="lecturers-summary-2" -->
-
-建议: 尽早选课，晚了好老师就没了
+- 陈科海
 
 ## 考核方式
 <!-- TOML-SECTION: title="考核方式" -->
 
 <!-- TOML-ITEM: id="item-考核方式-1" -->
 
-• 平时成绩: 30%
-• 期中考试: 30%
-• 期末考试: 40%
+24 级考核方式如下：
 
-> 文 / 昵称A，2025-03
+- 课堂表现（15%）：点名与课堂参与
+- 实验（40%）：在指定比赛平台上进行打榜，根据榜单排名与实验报告综合评定。实验可单人完成，也可 2 人组队完成。实验赛题包括：
+  - 中文新闻文本标题分类（文本分类）
+  - 产品评论观点提取（命名实体识别 + 情感分类）
+  - 细粒度中文仇恨言论识别（四元组抽取）
+  - 中文古诗词赏析评测（诗词情感推理与内容理解 QA）
+- 期末考试（45%）：闭卷。题型包括名词解释与简答题，覆盖从回归学习到大语言模型共 11 个章节的内容
 
-<!-- TOML-ITEM: id="item-考核方式-2" -->
+> 文 / [aqua](https://github.com/marine-aqua)，2026-07
 
-• 2024年: 期末 60% + 平时 40%
+## 教材与参考书
+<!-- TOML-SECTION: title="教材与参考书" -->
 
-> 文 / 昵称B，2024-01
+<!-- TOML-ITEM: id="item-教材与参考书-1" -->
+
+教材：周志华《机器学习》（西瓜书）。
+
+课件因版权原因不上传本仓库。
+
+> 文 / [aqua](https://github.com/marine-aqua)，2026-07
 
 ## 学习资料
 <!-- TOML-SECTION: title="学习资料" -->
 
 <!-- TOML-ITEM: id="item-学习资料-1" -->
 
-• 教材: 《书名》
-• 参考资料链接
+本仓库提供以下资料：
+- 机器学习复习笔记（`notes/`）：按章节整理的复习笔记，适合考前快速浏览
+- 期末回忆版（`exams/`）：25 秋期末考试回忆，含部分名词解释与简答题
+
+课件因版权原因不上传本仓库。
+
+> 文 / [aqua](https://github.com/marine-aqua)，2026-07
+
+## 课程内容
+<!-- TOML-SECTION: title="课程内容" -->
+
+<!-- TOML-ITEM: id="item-课程内容-1" -->
+
+课程共 11 章，内容覆盖机器学习核心领域：
+
+1. 回归学习：线性回归、正则化、梯度下降、过拟合与欠拟合
+2. 线性分类器：线性可分、多分类策略（OvR/OvO）、特征工程
+3. 支持向量机：核函数、软硬间隔、特征空间
+4. 聚类算法：K-means、半监督学习
+5. 典型神经网络：CNN、RNN、激活函数、梯度消失/爆炸、自编码器、LSTM/GRU
+6. 自监督学习
+7. 自注意力机制与 Transformer：QKV、BERT、GPT
+8. 迁移学习：领域自适应、领域泛化、Fine-tuning、零样本/小样本学习
+9. 强化学习：Q 学习、价值函数、策略方法、智能体-环境交互
+10. 扩散学习：扩散模型、前向加噪与反向去噪、GAN
+11. 大语言模型：语境学习范式
+
+> 文 / [aqua](https://github.com/marine-aqua)，2026-07
+
+## 课程建议
+<!-- TOML-SECTION: title="课程建议" -->
+
+<!-- TOML-ITEM: id="item-课程建议-1" -->
+
+- 期末考试占 45%，且为闭卷，需认真准备
+- 考试以名词解释和简答为主，建议按章节系统性整理知识点
+- 实验在比赛平台上进行打榜，建议在实验报告中写清楚思路与尝试过程，不单纯看榜单排名
+
+> 文 / [aqua](https://github.com/marine-aqua)，2026-07
